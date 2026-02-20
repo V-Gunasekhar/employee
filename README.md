@@ -1,94 +1,111 @@
 
+# 👥 Employee Management System - Frontend
 
-# Task Manager - Frontend (EMS)
-
-A modern, glassmorphism-inspired Task Management dashboard built with **React** and **Vite**. This frontend communicates with a Spring Boot backend to manage tasks, filter by status, and search by title.
+This is the frontend application for the Employee Management System, built using **React.js** and **Vite**. It provides a sleek, user-friendly interface to manage employee records, integrated with a Spring Boot backend API.
 
 ## 🚀 Features
 
-* **Secure Login:** Custom authentication flow with JWT integration.
-* **Task CRUD:** Create, View, Update (Status), and Delete tasks.
-* **Dynamic Filtering:** Filter tasks by `TODO`, `IN_PROGRESS`, and `DONE`.
-* **Live Search:** Search tasks by title in real-time.
-* **Responsive UI:** Glass-card design that works on all screen sizes.
+* **Dashboard Overview:** View total employee counts and quick stats.
+* **Employee CRUD:** * **Create:** Add new employees with validation.
+* **Read:** List all employees in a searchable table.
+* **Update:** Edit existing employee details.
+* **Delete:** Remove records with a confirmation prompt.
+
+
+* **Responsive Design:** Fully functional on desktops, tablets, and mobile devices.
+* **API Integration:** Uses **Axios** for smooth communication with the backend.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Framework:** React (Vite)
+* **Library:** React 18
+* **Build Tool:** Vite
+* **Routing:** React Router Dom
+* **Styling:** CSS3 / Bootstrap (or Tailwind)
 * **HTTP Client:** Axios
-* **Styling:** Custom CSS3 (Glassmorphism)
-* **Icons:** Lucide-React / Emoji UI
 
 ---
 
-## 💻 Getting Started
+## 💻 Setup Instructions
 
-### Prerequisites
+### 1. Prerequisites
 
-* [Node.js](https://nodejs.org/) installed (v16 or higher)
-* Backend (Spring Boot) running on `http://localhost:8080`
+Ensure you have the following installed:
 
-### Installation
+* **Node.js** (v18.0.0 or higher)
+* **npm** or **yarn**
 
-1. **Clone the repository:**
+### 2. Installation
+
+1. Clone the repository:
 ```bash
-git clone https://github.com/meena-1904/TaskManager.git
-cd TaskManager
+git clone https://github.com/V-Gunasekhar/employee.git
 
 ```
 
 
-2. **Install dependencies:**
+2. Navigate to the frontend directory:
+```bash
+cd ems-frontend
+
+```
+
+
+3. Install dependencies:
 ```bash
 npm install
 
 ```
 
 
-3. **Run the development server:**
+
+### 3. Running the App
+
+Start the development server:
+
 ```bash
 npm run dev
 
 ```
 
-
-
-The app will be running at `http://localhost:5173`.
+The application will be available at `http://localhost:5173`.
 
 ---
 
-## 🔑 Login Credentials (Dev Mode)
+## 🔌 Backend Connection
 
-For development/testing without a full user database:
-
-* **Username:** `admin`
-* **Password:** `1234`
+The frontend is configured to communicate with the backend running at:
+`http://localhost:8080/api/v1/employees`
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
 ```text
 src/
-├── components/
-│   ├── Login.jsx      # Login page & Auth logic
-│   └── TaskItem.jsx   # Individual task card component
-├── App.jsx            # Main dashboard & API handling
-├── App.css            # Styles for the entire app
-└── main.jsx           # Entry point
+├── components/     # Reusable UI components (Header, Footer)
+├── services/       # API call logic (EmployeeService.js)
+├── pages/          # Page views (ListEmployee, AddEmployee)
+├── App.jsx         # Main Routing logic
+└── main.jsx        # App entry point
+
+```
+
+---
+
+### How to save this to GitHub:
+
+1. Open your `README.md` file in your editor (VS Code).
+2. Paste the text above and save.
+3. Run these commands in Git Bash:
+```bash
+git add README.md
+git commit -m "docs: finalize professional readme"
+git push origin main
 
 ```
 
 
----
 
-### To push this to GitHub:
-
-Run these commands in your Git Bash:
-
-1. `git add README.md`
-2. `git commit -m "docs: added professional readme"`
-3. `git push origin main`
-
+**Would you like me to add a "Screenshots" section to this README so you can display images of your app's UI?**
