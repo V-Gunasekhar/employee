@@ -81,12 +81,6 @@ src/
 
 ```
 
----
-
-## 🤝 Team
-
-* **Backend:** [Meena]
-* **Frontend:** [Your Name]
 
 ---
 
