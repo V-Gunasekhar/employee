@@ -1,3 +1,5 @@
+// Employee Management Frontend Application
+
 import './App.css'
 import ListEmployeeComponent from './Component/ListEmployeeComponent'
 import HeaderComponent from './Component/HeaderComponent'
